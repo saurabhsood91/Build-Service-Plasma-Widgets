@@ -8,11 +8,9 @@
   <group name="General">
     <entry name="uname" type="String">
       <label>Username</label>
-      <default>saurabhsood91</default>
     </entry>
     <entry name="pwd" type="String">
       <label>Password</label>
-      <default>doggierules007</default>
     </entry>
   </group>
 
