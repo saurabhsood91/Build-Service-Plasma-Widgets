@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kcfg xmlns="https://kde.org/standards/kcfg/1.0"
+	xmlns:xsi="http://w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.kde.org/standards/kcfg/1.0
+	http://www.kde.org/standards/kcfg/1.0/kcfg.xsd">
+	<kcfgfile name="" />
+	
+	<group name="General">
+	<entry name="uname" type="String">
+		<label>Username</label>
+		<default>saurabhsood91</default>
+	</entry>
+	<entry name="pwd" type="String">
+		<label>Password</label>
+		<default>doggierules007</default>
+	</entry>
+	</group>
+</kcfg>

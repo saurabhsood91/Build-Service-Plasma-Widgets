@@ -1,0 +1,20 @@
+[Desktop Entry]
+Name=OBS Request Lists
+Comment=Retrieves the Request Lists
+
+X-Plasma-API=declarativeappletscript
+X-Plasma-MainScript=qml/main.qml
+X-Plasma-DefaultSize=400,300
+
+X-KDE-PluginInfo-Author=Saurabh Sood
+X-KDE-PluginInfo-Email=saurabhsood91@gmail.com
+X-KDE-PluginInfo-Website=http://plasma.kde.org
+X-KDE-PluginInfo-Category=Examples
+X-KDE-Name=requestlists
+X-KDE-Version=1.0
+
+X-KDE-PluginInfo-Depends=
+X-KDE-PluginInfo-License=GPL
+X-KDE-PLuginInfo-EnabledByDefault=true
+X-KDE-ServiceTypes=Plasma/Applet
+Type=Service

@@ -1,0 +1,6 @@
+Contains a Set of Plasma Widgets to interface with the Open Build Service (OBS) 
+
+1.) Contains the OBS DataEngine to implement the API Calls
+2.) Request Lists
+3.) Build Results
+4.) OBS Status --> Scheduler, Blocked, Building, Idle, Waiting

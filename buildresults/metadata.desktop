@@ -1,0 +1,18 @@
+[Desktop Entry]
+Comment=Plasmoid to retrieve the build results from OBS
+Icon=images/obs.png
+Name=OBS Build Results
+Type=Service
+X-KDE-PluginInfo-Author=Saurabh Sood
+X-KDE-PluginInfo-Category=Examples
+X-KDE-PluginInfo-Depends=
+X-KDE-PluginInfo-Email=saurabhsood91@gmail.com
+X-KDE-PluginInfo-EnabledByDefault=true
+X-KDE-PluginInfo-License=GPL
+X-KDE-PluginInfo-Name=obsbuildresults
+X-KDE-PluginInfo-Version=0.0
+X-KDE-PluginInfo-Website=http://plasma.kde.org/
+X-KDE-ServiceTypes=Plasma/Applet
+X-Plasma-API=declarativeappletscript
+X-Plasma-DefaultSize=400,300
+X-Plasma-MainScript=qml/main.qml
