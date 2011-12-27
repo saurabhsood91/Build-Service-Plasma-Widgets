@@ -19,7 +19,7 @@ QGraphicsWidget {
 	}
 
     PlasmaWidgets.LineEdit{
-		id:packageName
+		id:repositoryName
 		width:200
 		y:parent.top+5
 		
@@ -35,12 +35,18 @@ QGraphicsWidget {
 			for(i in data["Results"]){
 				textBrowser.html+="<br>"+data["Results"][i]+"<br><br>"
 			}
-			connectedSources=[]
+			disconnectSource("Results")
 		}
+        
 		onSourceAdded:{
 			print("Source added: "+dataSource.sources[0]);
 			connectSource("Results");
 		}
+        
+        onSourceRemoved:{
+            print("Source Removed")
+            disconnectSource("Results")
+        }
  }
  
  
@@ -51,13 +57,14 @@ QGraphicsWidget {
 		id:getDetails
 		text:"Click"
 		x:parent.top+5
-		y:packageName.right+20
+		y:repositoryName.right+20
 		anchors{
-			left:packageName.right
-			leftMargin:packageName.y+10
+			left:repositoryName.right
+			leftMargin:repositoryName.y+10
 		}
 		onClicked:{
-			activeSource="1https://"+username+":"+passwd+"@api.opensuse.org/build/"+packageName.text+"/_result";
+            textBrowser.html=""
+			activeSource="1https://"+username+":"+passwd+"@api.opensuse.org/build/"+repositoryName.text+"/_result";
 			print(activeSource);
 			dataSource.connectedSources=[activeSource];
 			plasmoid.busy=true
@@ -68,13 +75,13 @@ QGraphicsWidget {
     
     PlasmaWidgets.WebView{
 		id:textBrowser
-		x:packageName.x+25
+		x:repositoryName.x+25
 		y:parent.left+15
 		width:page.width
 		height:page.height
 		html:"Build Results:"
 		anchors{
-			top:packageName.bottom
+			top:repositoryName.bottom
 		}
 	}
 
